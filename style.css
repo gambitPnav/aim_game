@@ -1,0 +1,36 @@
+body {
+    background-color: blanchedalmond;
+    display: flex;
+    justify-content: center;  
+    align-items: center;  
+    height: 100vh; 
+    margin: 0; 
+}
+
+.box {
+    background-color: rgb(61, 141, 141);
+    border: 0px solid rgb(18, 7, 7);
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    animation-name: circles;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    position: relative;
+ 
+    transform-origin: center;
+}
+
+@keyframes circles {
+    0% {
+        transform: scale(0);  
+    }
+    50% {
+        transform: scale(1);  
+    }
+    100% {
+        transform: scale(0);
+    }
+}
